@@ -1,0 +1,159 @@
+main{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    section{
+        .lineaAzul{
+            margin: 0 auto;
+            border-bottom: #0080ff 1px solid;
+            width: 80%;
+            h1{
+                margin-bottom: 2px;
+                margin-top: 50px;
+                text-align: center;
+                color: #0080ff;
+                font-size: 13px;
+            }
+        }
+        article{
+            margin-top: 10px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            width: 100%;
+            margin-left: 10%;
+            .informacion{
+                display: flex;
+                flex-direction: column;
+                width: 80%;
+                display: flex;
+                p{
+                    color: blue;
+                    font-size: 13px;
+                    .colorAzulParrafo{
+                        color: #0080ff;
+                    }
+                }
+                h3{
+                    color: orange;
+                    margin-left: 30px;
+                }
+                img{
+                    border: #0080ff 1px solid;
+                }
+            }
+            .formulario{
+                width: 80%;
+                display: flex;
+                flex-direction: column;
+                color: blue;
+                label{
+                    margin: 8px 15px;
+                    font-size: 13px;
+                }
+                textarea{
+                    height: 290px;
+                }
+                input{
+                    height: 50px;
+                }
+                input, textarea{
+                    margin-bottom: 15px;
+                    border: 2px solid #0080ff;
+                    border-radius: 4px;
+                }
+                .check{
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    margin-top: 10px;
+                    .checkbox{
+                        width: 10px;
+                        height: 10px;
+                        margin-right: 6px;
+                        background-color: orange;
+                    }
+                }
+                .button{
+                    margin-top: 15px;
+                    display: flex;
+                    justify-content: center;
+                    button{
+                        // margin: 0 auto;
+                        width: 50%;
+                        height: 40px;
+                        background-color: orange;
+                        color: white;
+                        border: none;
+                    }
+                }
+            }
+        }
+    }
+    .redesSociales{
+        display: flex;
+        justify-content: center;
+            // align-items: center;
+        .icoRedSocial{
+            width: 60px;
+            height: 60px;
+            opacity: 0.2;
+            border: 1px solid gray;
+            // line-height: 60px;
+            // text-align: center;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-radius: 50%;
+            box-shadow: 0 0 13px 6px grey;
+            margin-top: 25px;
+            i{
+                color: grey;
+                font-size: 40px;
+                cursor: pointer;
+            }
+        }
+    }
+
+}
+@media screen and(min-width:1000px) {
+    main{
+        flex-direction: row;
+        section{
+            .lineaAzul{
+                width: 35%;
+                h1{
+                    margin-top: 100px;
+                    font-size: 40px;
+                }
+            }
+            article{
+                margin-top: 50px;
+                flex-direction: row;
+                margin-left: 0%;
+                .informacion{
+                    width: 35%;
+                    p{
+                        font-size: 25px;
+                    }
+                }
+                .formulario{
+                    width: 30%;
+                    margin-left: 100px;
+                    width: 30%;
+                    label{
+                        font-size: 25px;
+                    }
+                    .check{
+                        font-size: 25px;
+                    }
+                }
+            }
+        }
+        .redesSociales{
+            flex-direction: column;
+            justify-content: flex-start;
+        }
+
+    }
+}

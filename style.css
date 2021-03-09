@@ -1,0 +1,548 @@
+body {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  background-color: #ffffff;
+}
+
+header {
+  top: 0;
+  height: 95px;
+  background-color: #0080ff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -ms-flex-item-align: center;
+      align-self: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+header nav input {
+  position: absolute;
+  width: 15px;
+  height: 14px;
+  cursor: pointer;
+  opacity: 0;
+}
+
+header nav input:checked ~ ul {
+  background-color: #0080ff;
+  z-index: 1;
+  opacity: 1;
+}
+
+header nav input:checked ~ .checkbox > .ico > .fa-bars {
+  opacity: 0;
+}
+
+header nav input:checked ~ .checkbox > .ico > .fa-times {
+  opacity: 1;
+}
+
+header nav .checkbox {
+  position: relative;
+  z-index: 1;
+  width: 15px;
+  height: 14px;
+  color: white;
+  display: block;
+}
+
+header nav .checkbox .fa-bars {
+  opacity: 1;
+}
+
+header nav .checkbox i {
+  position: absolute;
+}
+
+header nav ul {
+  width: 100%;
+  height: 284px;
+  right: 0;
+  margin-top: 40px;
+  position: absolute;
+  opacity: 0;
+  padding-top: 32px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+}
+
+header nav ul li {
+  list-style: none;
+  height: 30px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 300;
+  text-align: center;
+  color: white;
+  cursor: pointer;
+}
+
+header nav ul li a {
+  text-decoration: none;
+  color: #0080ff;
+  color: white;
+}
+
+header nav ul .contact {
+  display: none;
+}
+
+header nav ul .guion {
+  margin: 0 auto;
+  height: 12.5px;
+  width: 40px;
+  border-top: 0.1px solid #C0C0C0;
+}
+
+header nav ul .banderaYmas {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+header nav ul .banderaYmas .imagen {
+  width: 35px;
+  height: 25px;
+}
+
+header .logo {
+  width: 50px;
+  height: 50px;
+}
+
+@media screen and (min-width: 1000px) {
+  header {
+    padding-left: 50px;
+  }
+  header nav {
+    width: 90%;
+    height: 100%;
+    padding: 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  header nav input:checked ~ ul {
+    display: none;
+  }
+  header nav .checkbox {
+    display: none;
+  }
+  header nav ul {
+    margin: 0 10%;
+    padding: 0;
+    width: 95%;
+    height: 95px;
+    opacity: 1;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+    -webkit-box-align: end;
+        -ms-flex-align: end;
+            align-items: flex-end;
+  }
+  header nav ul .primerLi {
+    margin-left: 10%;
+  }
+  header nav ul li, header nav ul a {
+    color: white;
+  }
+  header nav ul .lupa {
+    margin-left: 10%;
+  }
+  header nav ul .contact {
+    border: white 20px solid;
+    width: 90px;
+  }
+  header nav ul .banderaYmas {
+    margin-right: 10%;
+  }
+  header nav ul .guion {
+    display: none;
+  }
+  header .logo {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin-right: 10%;
+    width: 100px;
+    height: 150px;
+  }
+}
+
+main {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+main section .lineaAzul {
+  margin: 0 auto;
+  border-bottom: #0080ff 1px solid;
+  width: 80%;
+}
+
+main section .lineaAzul h1 {
+  margin-bottom: 2px;
+  margin-top: 50px;
+  text-align: center;
+  color: #0080ff;
+  font-size: 13px;
+}
+
+main section article {
+  margin-top: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 100%;
+  margin-left: 10%;
+}
+
+main section article .informacion {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 80%;
+  display: flex;
+}
+
+main section article .informacion p {
+  color: blue;
+  font-size: 13px;
+}
+
+main section article .informacion p .colorAzulParrafo {
+  color: #0080ff;
+}
+
+main section article .informacion h3 {
+  color: orange;
+  margin-left: 30px;
+}
+
+main section article .informacion img {
+  border: #0080ff 1px solid;
+}
+
+main section article .formulario {
+  width: 80%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  color: blue;
+}
+
+main section article .formulario label {
+  margin: 8px 15px;
+  font-size: 13px;
+}
+
+main section article .formulario textarea {
+  height: 290px;
+}
+
+main section article .formulario input {
+  height: 50px;
+}
+
+main section article .formulario input, main section article .formulario textarea {
+  margin-bottom: 15px;
+  border: 2px solid #0080ff;
+  border-radius: 4px;
+}
+
+main section article .formulario .check {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-top: 10px;
+}
+
+main section article .formulario .check .checkbox {
+  width: 10px;
+  height: 10px;
+  margin-right: 6px;
+  background-color: orange;
+}
+
+main section article .formulario .button {
+  margin-top: 15px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+main section article .formulario .button button {
+  width: 50%;
+  height: 40px;
+  background-color: orange;
+  color: white;
+  border: none;
+}
+
+main .redesSociales {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+main .redesSociales .icoRedSocial {
+  width: 60px;
+  height: 60px;
+  opacity: 0.2;
+  border: 1px solid gray;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-radius: 50%;
+  -webkit-box-shadow: 0 0 13px 6px grey;
+          box-shadow: 0 0 13px 6px grey;
+  margin-top: 25px;
+}
+
+main .redesSociales .icoRedSocial i {
+  color: grey;
+  font-size: 40px;
+  cursor: pointer;
+}
+
+@media screen and (min-width: 1000px) {
+  main {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+  main section .lineaAzul {
+    width: 35%;
+  }
+  main section .lineaAzul h1 {
+    margin-top: 100px;
+    font-size: 40px;
+  }
+  main section article {
+    margin-top: 50px;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    margin-left: 0%;
+  }
+  main section article .informacion {
+    width: 35%;
+  }
+  main section article .informacion p {
+    font-size: 25px;
+  }
+  main section article .formulario {
+    width: 30%;
+    margin-left: 100px;
+    width: 30%;
+  }
+  main section article .formulario label {
+    font-size: 25px;
+  }
+  main section article .formulario .check {
+    font-size: 25px;
+  }
+  main .redesSociales {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+  }
+}
+
+footer {
+  background-color: #0080ff;
+  height: 250px;
+}
+
+footer div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+footer div ul {
+  list-style: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  padding: 0;
+}
+
+footer div ul li, footer div ul a {
+  color: white;
+  text-decoration: none;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 300;
+}
+
+footer div .logo {
+  margin: 0 auto;
+}
+
+footer .containerFinal {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+footer .containerFinal img {
+  width: 20%;
+}
+
+footer .containerFinal ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 200;
+  font-size: 13px;
+}
+
+footer .containerFinal ul .division {
+  height: 1px;
+  width: 70%;
+  background-color: white;
+  margin: 15px;
+}
+
+@media screen and (min-width: 1000px) {
+  footer {
+    margin-top: 80px;
+    padding: 0px 25%;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    height: 400px;
+    padding-top: 100px;
+  }
+  footer div {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+  footer div ul {
+    width: 80%;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  footer .containerFinal {
+    margin-top: 50px;
+  }
+  footer .containerFinal ul {
+    width: 100%;
+  }
+  footer .containerFinal ul .division {
+    margin: 30px;
+  }
+}
+/*# sourceMappingURL=style.css.map */
